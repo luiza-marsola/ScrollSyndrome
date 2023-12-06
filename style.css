@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    color: #666;
+}
+
+
+/*Nav - Menu - Title*/
+header {
+    color: #F2E9E1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/*Title*/
+.title {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.title h1 {
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+/*Sub title*/
+.title h2 {
+    color: #F2E9E1;
+    font-size: 44px;
+    margin-top: -20px;
+}
+
+/*stroke - titles*/
+.stroked-text {
+    -webkit-text-stroke: 2px #FF9785; /* Width and color of the stroke */
+}
+
+.stroked-text2 {
+    -webkit-text-stroke: 2px #86B89A; /* Width and color of the stroke */
+}
+
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke*/
+
+
+/*menu*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #86B89A;
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #FF9785;
+    border-bottom: 2px solid #FF9785;
+    border-top: 2px solid #FF9785;
+}
+
+nav ul li a.active {
+    color: #FF9785;
+    border-bottom: 2px solid #FF9785;
+    border-top: 2px solid #FF9785;
+}
+
+/*image - home page*/
+.image-container {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*Home page - content*/
+.centered-box {
+    color: #666;
+    background-color: #F2E9E1;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; 
+    text-indent: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.centered-box p {
+    width: 70%;
+    align-items: center;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.learn-more-link {
+    color: #86B89A;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: right;
+    margin-top: 10px; 
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.learn-more-link:hover {
+    color: #FF9785; 
+    text-decoration: underline;
+}
+
+
+.animated-button {
+    display: block; 
+    margin: 20px auto;
+    padding: 30px 60px; 
+    font-size: 40px; 
+    text-align: center;
+    text-decoration: none;
+    background-color: #FF9785;
+    color: #F2E9E1;
+    border: 2px solid #FF9785;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.animated-button:hover {
+    background-color: #86B89A;
+    border: 2px solid #86B89A;
+    color: #F2E9E1;
+    transform: scale(1.1);
+}
+
+/*About page - content*/
+.about-box {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    text-indent: 10px;
+    background-color: #F2E9E1;
+}
+
+.about-box h3 {
+    color: #666;
+}
+
+.about-box p {
+    color: #666;
+}
+
+.about-box ul {
+    color: #666;
+}
+
+.about-box2 {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    text-indent: 10px;
+    background-color: #86B89A ;
+    margin-bottom: 40px;
+    background-color: #F2E9E1;
+}
+
+.about-box2 h3 {
+    color: #666;
+}
+
+.about-box2 p {
+    color: #666;
+}
+
+.about-box2 ul {
+    color: #666;
+}
+
+.about1{
+    color: #FF9785;
+}
+
+.about2{
+    color: #86B89A;
+}
+
+
+/*Quiz page - content*/
+.quiz-container {
+    background-color: #F2E9E1;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    color:#666;
+}
+
+.question {
+    margin-bottom: 60px;
+}
+
+#quizForm button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #86B89A;
+    color: #F2E9E1;
+    border: 2px solid #86B89A;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#quizForm button:hover {
+    background-color: #FF9785;
+    border: 2px solid #FF9785;
+    color: #F2E9E1;
+    transform: scale(1.1);
+}
+
+.popup {
+    background-color: #FF9785; 
+    width: 80%; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+}
+
+.popup button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #86B89A
+}
+
+/*page 2*/
+h3 {
+    padding: 10px;
+    color: #FF9785;
+    font-size: 30px;
+}
+
+/*GIFS*/
+#gifContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.gif-popup {
+   position: absolute;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/*Home page - restyle*/
+.homepage {
+    color: #666;
+    margin: 20px auto;
+    margin-top: -40px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%; 
+    text-indent: 5px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragraph-quiz {
+    float: left;
+    width: 70%; 
+    margin-right: 20px; 
+    font-size: 25px;
+}
+
+.animated-button1 {
+    display: block; 
+    margin: 20px auto;
+    margin-top: 50px;
+    margin-left: 50%;
+    padding: 30px 60px; 
+    font-size: 40px; 
+    text-align: center;
+    text-decoration: none;
+    background-color:#FF9785;
+    color: #F2E9E1;
+    border: 2px solid #FF9785;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.animated-button1:hover {
+    background-color: #86B89A;
+    border: 2px solid #86B89A;
+    color: #F2E9E1;
+    transform: scale(1.1);
+}
+
+.bold {
+    font-size: 30px;
+    color: #F2E9E1;
+    font-weight: bold;
+}
+
+/*GIFS*/
+.gif-popup button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FF9785;
+  color: #333;
+  border: 2px solid #FF9785;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.gif-popup button:hover {
+  background-color: #86B89A;
+  color: #333;
+  border: 2px solid #86B89A;
+}

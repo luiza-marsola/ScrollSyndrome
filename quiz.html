@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Menu / Nav Bar -->
+        <div class="title">
+            <h1><span class="stroked-text">Scroll Syndrome</span></h1>
+            <h2><span class="stroked-text2">The Internet's Attention Crisis</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- GIF pop up every 10 seconds -->
+    <div id="gifContainer"></div>
+
+
+<!-- Quiz -->
+<!-- https://css-tricks.com/building-a-simple-quiz/ 
+    https://github.com/search?q=quiz+app+javascript&type=repositories-->
+
+ <div class="quiz-container">
+
+    <h3>Attention Span Quiz: Are Digital Distractions Affecting You?</h3>
+
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. How often do you check your smartphone during a typical day?</p>
+                <label><input type="radio" name="q1" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q1" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q1" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q1" value="4"> d) Constantly</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. When working or studying, how often do you find yourself multitasking with other digital devices (e.g., computer, tablet, TV)?</p>
+                <label><input type="radio" name="q2" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q2" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q2" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q2" value="4"> d) Constantly</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What is your typical response time to notifications on your phone or computer?</p>
+                <label><input type="radio" name="q3" value="1"> a) I wait until I finish my current task</label>
+                <label><input type="radio" name="q3" value="2"> b) Within a few minutes</label>
+                <label><input type="radio" name="q3" value="3"> c) Within 15 minutes</label>
+                <label><input type="radio" name="q3" value="4"> d) Immediately</label>
+            </div>
+
+             <!-- Question 4 -->
+            <div class="question">
+                <p>4. How many social media platforms do you actively use on a daily basis?</p>
+                <label><input type="radio" name="q4" value="1"> a) None</label>
+                <label><input type="radio" name="q4" value="2"> b) 1-2</label>
+                <label><input type="radio" name="q4" value="3"> c) 3-4</label>
+                <label><input type="radio" name="q4" value="4"> d) 5 or more</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. When reading an article or watching a video online, how often do you switch to another task before finishing?</p>
+                <label><input type="radio" name="q5" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q5" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q5" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q5" value="4"> d) Constantly</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. How often do you experience the "phantom vibration" sensation, thinking your phone is vibrating when it's not?</p>
+                <label><input type="radio" name="q6" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q6" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q6" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q6" value="4"> d) Constantly</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p>7. Do you often find it challenging to focus on a single task without the urge to check your phone or other digital devices?</p>
+                <label><input type="radio" name="q7" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q7" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q7" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q7" value="4"> d) Constantly</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p>8. How would you describe your ability to disconnect from digital devices during leisure time?</p>
+                <label><input type="radio" name="q8" value="1"> a) Easy; I regularly take breaks from screens</label>
+                <label><input type="radio" name="q8" value="2"> b) Moderate; I occasionally take breaks</label>
+                <label><input type="radio" name="q8" value="3"> c) Difficult; I find it hard to stay away from screens</label>
+                <label><input type="radio" name="q8" value="4"> d) Extremely difficult; I'm constantly connected</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p>9. During a conversation, how often do you find yourself checking your phone or other devices?</p>
+                <label><input type="radio" name="q9" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q9" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q9" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q9" value="4"> d) Constantly</label>
+            </div>
+
+             <!-- Question 10 -->
+            <div class="question">
+                <p>10. Reflecting on your daily routine, how often do you feel that digital distractions have impacted your overall productivity or well-being?</p>
+                <label><input type="radio" name="q10" value="1"> a) Rarely or never</label>
+                <label><input type="radio" name="q10" value="2"> b) Occasionally</label>
+                <label><input type="radio" name="q10" value="3"> c) Frequently</label>
+                <label><input type="radio" name="q10" value="4"> d) Constantly</label>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </form>
+
+    </div>
+
+        <div id="quizResult"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
